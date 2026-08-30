@@ -304,7 +304,7 @@ elif slide == 4:
         "<b>Quad your paper.</b> Divide your graph paper into 4 equal sections.",
         "<b>Draw a diagonal line</b> about 7-8 inches long straight through the center of the graph.",
         "<b>Observe the dragonfly</b> at the front board. Using the provided geometric shape manipulatives, simulate the dragonfly along your diagonal line.",
-        "<b>Build a ledge</b> along the side of your page. Show every shape you used, and keep a tally of how many of each shape you used.",
+        "<b>Build a ledgend</b> along the side of your page. Show every shape you used, and keep a tally of how many of each shape you used.",
         "<b>Be exact.</b> Only straight lines earn the prize today - press your pencil firmly against the shape and draw carefully.",
     ]
     for i, s in enumerate(steps, start=1):
