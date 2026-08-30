@@ -334,7 +334,7 @@ elif slide == 5:
         "Get a <b>second sheet</b> of graph paper.",
         "This time, <b>you</b> quad the paper yourself - draw your own dividing lines.",
         "Design and build <b>your own imagined object</b> using the geometric shape manipulatives.",
-        "Keep the <b>same tally system</b> as before: a ledge showing your shapes and a count of each.",
+        "Keep the <b>same tally system</b> as before: a ledgend showing your shapes and a count of each.",
     ]
     for i, s in enumerate(steps, start=1):
         st.markdown(
