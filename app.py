@@ -221,7 +221,7 @@ elif slide == 1:
         st.markdown(
             f"""
             <div class="station-card">
-            <h3>🧑‍🤝‍🧑 EXPLORE</h3>
+            <h3>🧑🏿‍🤝‍🧑🏿 EXPLORE</h3>
             <b>Back Board with Friends</b>
             <p>Grab a dry-erase marker and head to the back board. Work with classmates to try the task yourselves.</p>
             </div>
@@ -430,8 +430,19 @@ elif slide == 8:
         unsafe_allow_html=True,
     )
 
+    st.markdown(
+        """
+        <div class="warn-box">
+        📓 Journal It: Copy the three "I can" statements above into your math journal, word for word.
+        Then, in your workbook, write 2-3 sentences for each one describing exactly what you did today
+        to earn it - be specific about the steps you took, not just "I did it."
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # ============================================================
-# SLIDE 9 — ENRICH USING MORE: RESOURCES
+# SLIDE 9 — EXPLORE MORE: RESOURCES
 # ============================================================
 elif slide == 9:
     st.markdown('<span class="pace-badge">BONUS</span>', unsafe_allow_html=True)
