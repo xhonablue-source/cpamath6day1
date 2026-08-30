@@ -137,6 +137,7 @@ SLIDES = [
     "Enrich: Name Your Creation",
     "Turn It In",
     "What You Just Did",
+    "Explore More: Resources",
 ]
 
 if "slide" not in st.session_state:
@@ -304,7 +305,7 @@ elif slide == 4:
         "<b>Quad your paper.</b> Divide your graph paper into 4 equal sections.",
         "<b>Draw a diagonal line</b> about 7-8 inches long straight through the center of the graph.",
         "<b>Observe the dragonfly</b> at the front board. Using the provided geometric shape manipulatives, simulate the dragonfly along your diagonal line.",
-        "<b>Build a ledgend</b> along the side of your page. Show every shape you used, and keep a tally of how many of each shape you used.",
+        "<b>Build a ledge</b> along the side of your page. Show every shape you used, and keep a tally of how many of each shape you used.",
         "<b>Be exact.</b> Only straight lines earn the prize today - press your pencil firmly against the shape and draw carefully.",
     ]
     for i, s in enumerate(steps, start=1):
@@ -334,7 +335,7 @@ elif slide == 5:
         "Get a <b>second sheet</b> of graph paper.",
         "This time, <b>you</b> quad the paper yourself - draw your own dividing lines.",
         "Design and build <b>your own imagined object</b> using the geometric shape manipulatives.",
-        "Keep the <b>same tally system</b> as before: a ledgend showing your shapes and a count of each.",
+        "Keep the <b>same tally system</b> as before: a ledge showing your shapes and a count of each.",
     ]
     for i, s in enumerate(steps, start=1):
         st.markdown(
@@ -358,7 +359,7 @@ elif slide == 6:
     steps = [
         "Bring your <b>tally</b> (the shapes and counts) to the Enrich area.",
         "Professor Xavier will show you how to use your tally to <b>name</b> your simulated object.",
-        "This is where math becomes a language - your shape-tally becomes a part of your object's name.",
+        "This is where math becomes a language - your shape-tally becomes your object's name.",
     ]
     for i, s in enumerate(steps, start=1):
         st.markdown(
@@ -428,6 +429,91 @@ elif slide == 8:
         """,
         unsafe_allow_html=True,
     )
+
+# ============================================================
+# SLIDE 9 — EXPLORE MORE: RESOURCES
+# ============================================================
+elif slide == 9:
+    st.markdown('<span class="pace-badge">BONUS</span>', unsafe_allow_html=True)
+    st.markdown('<div class="big-title">Explore More: Resources</div>', unsafe_allow_html=True)
+    st.write("Curious about today's lesson? Here are some places to keep exploring.")
+
+    st.markdown('<div class="sub-title">For Curious Mathematicians</div>', unsafe_allow_html=True)
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>🔷 Pattern Shapes</h3>
+            <p>A free virtual version of the same shape manipulatives we used today - build your own designs at home.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button("Open Pattern Shapes", "https://apps.mathlearningcenter.org/pattern-shapes/", use_container_width=True)
+
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>🦋 Dragonfly Facts</h3>
+            <p>Learn more about the real insect we observed today, from National Geographic.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button("Read on Nat Geo", "https://www.nationalgeographic.com/animals/invertebrates/facts/dragonflies-insects/", use_container_width=True)
+
+    with c2:
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>🧩 Polypad</h3>
+            <p>A free online playground of shapes, polygons, and tangrams for grades 6-12 - a bigger toolbox to build with.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button("Open Polypad", "https://polypad.amplify.com/", use_container_width=True)
+
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>🔬 The Math in Dragonfly Wings</h3>
+            <p>Real scientists use math to explain the geometric patterns in dragonfly wings - the same kind of shape-thinking we did today.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button("Read on Science News", "https://www.sciencenews.org/article/how-math-helps-explain-delicate-patterns-dragonfly-wings", use_container_width=True)
+
+    st.markdown('<div class="sub-title">For Educators & Families</div>', unsafe_allow_html=True)
+    c3, c4 = st.columns(2)
+    with c3:
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>📘 Standards for Mathematical Practice</h3>
+            <p>The official Common Core description of MP4, MP5, MP6, and the other five practices referenced today.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button("View on corestandards.org", "https://www.thecorestandards.org/Math/Practice/", use_container_width=True)
+    with c4:
+        st.markdown(
+            """
+            <div class="station-card">
+            <h3>🏛️ Michigan K-12 Math Standards</h3>
+            <p>The Michigan Department of Education's full K-12 Standards for Mathematics document.</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.link_button(
+            "View Michigan DOE PDF",
+            "https://www.michigan.gov/-/media/Project/Websites/mde/Literacy/Content-Standards/Math_Standards.pdf",
+            use_container_width=True,
+        )
 
 # ---------------- Bottom navigation ----------------
 st.write("")
