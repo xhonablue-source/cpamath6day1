@@ -431,7 +431,7 @@ elif slide == 8:
     )
 
 # ============================================================
-# SLIDE 9 — EXPLORE MORE: RESOURCES
+# SLIDE 9 — ENRICH USING MORE: RESOURCES
 # ============================================================
 elif slide == 9:
     st.markdown('<span class="pace-badge">BONUS</span>', unsafe_allow_html=True)
