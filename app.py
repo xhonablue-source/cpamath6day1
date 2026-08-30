@@ -278,7 +278,7 @@ elif slide == 3:
     st.markdown(
         f"""
         <div class="quote-box">
-        Math is a numerical or graphical representation of an observation —
+        Math are the numerical, symbol and graphical representations of an observation —
         or a simulation of an imagined observation.
         </div>
         """,
