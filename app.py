@@ -358,7 +358,7 @@ elif slide == 6:
     steps = [
         "Bring your <b>tally</b> (the shapes and counts) to the Enrich area.",
         "Professor Xavier will show you how to use your tally to <b>name</b> your simulated object.",
-        "This is where math becomes a language - your shape-tally becomes your object's name.",
+        "This is where math becomes a language - your shape-tally becomes a part of your object's name.",
     ]
     for i, s in enumerate(steps, start=1):
         st.markdown(
