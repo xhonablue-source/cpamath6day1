@@ -1,12 +1,12 @@
 import streamlit as st
 
 # ============================================================
-# CHANDLER PARK ACADEMY — DAY ONE (55 MINUTES)
+# GRADE 6 MATH — DAY ONE (55 MINUTES)
 # "What Is Math?" — E3 Math Station System
 # ============================================================
 
 st.set_page_config(
-    page_title="CPA Day 1 — What Is Math?",
+    page_title="Day 1 — What Is Math?",
     page_icon="📐",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -130,7 +130,7 @@ st.markdown(
 SLIDES = [
     "Welcome",
     "The E3 Math Station System",
-    "Your First 3 Days at CPA",
+    "Your First 3 Days of Grade 6 Math",
     "Day 1: What Is Math?",
     "Engage: Observe & Simulate",
     "Explore: Build Your Own",
@@ -158,7 +158,7 @@ def go_prev():
 
 # ---------------- Sidebar navigation ----------------
 with st.sidebar:
-    st.markdown(f"<h3 style='color:{NAVY};'>CPA Day 1 Roadmap</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='color:{NAVY};'>Day 1 Roadmap</h3>", unsafe_allow_html=True)
     st.caption("55-minute period — What Is Math?")
     for i, label in enumerate(SLIDES):
         prefix = "▶ " if i == st.session_state.slide else "　"
@@ -171,7 +171,7 @@ with st.sidebar:
 st.markdown(
     f"""
     <div class="cpa-banner">
-        <h1>CHANDLER PARK ACADEMY</h1>
+        <h1>GRADE 6 MATHEMATICS</h1>
         <p>Grade 6 Mathematics &nbsp;|&nbsp; Day One &nbsp;|&nbsp; 55-Minute Period</p>
     </div>
     """,
@@ -186,7 +186,7 @@ slide = st.session_state.slide
 if slide == 0:
     st.markdown('<span class="pace-badge">0-3 min</span>', unsafe_allow_html=True)
     st.markdown('<div class="big-title">Welcome!</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-title">To Chandler Park Academy Mathematics</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-title">To Grade 6 Mathematics</div>', unsafe_allow_html=True)
     st.markdown(
         f"""
         <div class="quote-box">
@@ -245,7 +245,7 @@ elif slide == 1:
 # ============================================================
 elif slide == 2:
     st.markdown('<span class="pace-badge">8-11 min</span>', unsafe_allow_html=True)
-    st.markdown('<div class="big-title">Your First 3 Days at CPA</div>', unsafe_allow_html=True)
+    st.markdown('<div class="big-title">Your First 3 Days of Grade 6 Math</div>', unsafe_allow_html=True)
     st.write("Here's how we'll use the E3 system to kick off the year:")
 
     c1, c2, c3 = st.columns(3)
