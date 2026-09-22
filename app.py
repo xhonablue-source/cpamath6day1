@@ -22,15 +22,15 @@ st.markdown(
     .stApp {{ background-color: #FFFFFF; }}
     .block-container {{ padding-top: 2rem; padding-bottom: 3rem; max-width: 1100px; }}
 
-    .cpa-banner {{
+    .lesson-banner {{
         background-color: {NAVY};
         color: white;
         padding: 1.1rem 1.8rem;
         border-radius: 10px;
         margin-bottom: 1.6rem;
     }}
-    .cpa-banner h1 {{ margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; }}
-    .cpa-banner p {{ margin: 0.2rem 0 0 0; opacity: 0.85; font-size: 0.95rem; }}
+    .lesson-banner h1 {{ margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; }}
+    .lesson-banner p {{ margin: 0.2rem 0 0 0; opacity: 0.85; font-size: 0.95rem; }}
 
     .pace-badge {{
         display: inline-block;
@@ -170,7 +170,7 @@ with st.sidebar:
 # ---------------- Header banner ----------------
 st.markdown(
     f"""
-    <div class="cpa-banner">
+    <div class="lesson-banner">
         <h1>GRADE 6 MATHEMATICS</h1>
         <p>Grade 6 Mathematics &nbsp;|&nbsp; Day One &nbsp;|&nbsp; 55-Minute Period</p>
     </div>
